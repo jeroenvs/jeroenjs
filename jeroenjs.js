@@ -24,7 +24,7 @@ var Events = {
 };
 
 // 
-// Model that holds domain value
+// Model to hold domain values
 // 
 
 var Model = function(attributes) {
@@ -35,6 +35,7 @@ var Model = function(attributes) {
 
 _.extend(Model.prototype, Events, {
 	initialize: function() {
+		// Overwrite to add functionality
 	},
 	
 	get: function(name) {
@@ -65,7 +66,7 @@ _.extend(Model.prototype, Events, {
 });
 
 //
-// Controller used to link between the model and view
+// Controller used to integrate between view and model
 //
 
 var Controller = function(attributes) {
@@ -74,11 +75,12 @@ var Controller = function(attributes) {
 
 _.extend(Controller.prototype, Events, {
 	initialize: function(attributes) {
+		// Overwrite to add functionality
 	}
 });
 
 //
-// Helper method
+// Allows simple inheritance of base classes
 // 
 
 extend = function(protoProps, staticProps) {
