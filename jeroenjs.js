@@ -15,7 +15,7 @@ var Events = {
 		_.each(events, function(event) {
 			event.callback(args);
 		});
-	} 
+	}
 };
 
 // 
