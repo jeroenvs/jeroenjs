@@ -1,4 +1,9 @@
 //
+// Simple implementation of the model-view-controller pattern for JavaScript applications.
+// Depends on underscore (http://underscorejs.org) v1.4.4
+//
+
+//
 // Event bus for registering and triggering events
 //
 
